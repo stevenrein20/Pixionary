@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sb_3.pixionary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainMenuActivity">
+            android:label="@string/app_name"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".joingame.GameBrowserActivity" />
+        <activity
+            android:name=".UserSettings.SettingsDialog"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".UserSettings.ProfileActivity" />
+        <activity android:name=".UserSettings.LeaderboardActivity" />
+        <activity android:name=".hostgame.HostGameActivity" />
+        <activity android:name=".hostgame.PlaylistSelectActivity" />
+        <activity android:name=".gameplay.GameActivity" />
+        <activity android:name=".gameplay.LobbyActivity" />
+        <activity
+            android:name=".gameplay.PlayAgainActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".gameplay.PointUpdateActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".gameplay.GuessResponseActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".AdminSettingsDialog.AdminSettings"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".UserSettings.UpdateAccount" />
+        <activity android:name=".AdminSettingsDialog.ViewUsers" />
+        <activity
+            android:name=".AdminSettingsDialog.ViewSelectedUser"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".SharedSettings.Images" />
+        <activity android:name=".SharedSettings.ImagesViewCategory" />
+        <activity
+            android:name=".SharedSettings.AddCategory"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".SharedSettings.ViewSelectedImage"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".AdminSettingsDialog.HostRequests"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".SharedSettings.AddImage" />
+        <activity
+            android:name=".SharedSettings.AddViewImage"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".SharedSettings.ImageSearch"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".SharedSettings.Friends" />
+        <activity
+            android:name=".SharedSettings.AddFriend"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".SharedSettings.FriendRequests"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".SharedSettings.ViewSelectedFriend"
+                  android:theme="@android:style/Theme.Dialog"></activity>
+    </application>
+
+</manifest>
